@@ -96,6 +96,7 @@ How do you deliver this? Here are some guidelines:
 
 * The command-line application should allow users to:
 
+
   * Update employee managers
 
   * View employees by manager
