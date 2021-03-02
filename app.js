@@ -140,3 +140,23 @@ function addEmployee() {
   })
 }
 
+function viewDepartments() {
+  connection.query("SELECT * FROM department", function (err, data) {
+      console.table(data);
+      initSystem();
+  })
+}
+
+function viewRoles() {
+  connection.query("SELECT * FROM role", function (err, data) {
+      console.table(data);
+      initSystem();
+  })
+}
+
+function viewEmployees() {
+  connection.query("SELECT * FROM employee", function (err, data) {
+      console.table(data);
+      askQuestions();
+  })
+}
